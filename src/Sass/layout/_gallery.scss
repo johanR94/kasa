@@ -1,0 +1,21 @@
+@import "../utils/variable";
+@import"../utils/mixins";
+.gallery{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    row-gap: 7%;
+    padding: 4% 0 4% 0;
+    margin: 2% 0 2% 0;
+    @include borderRadius25;
+    background-color: #f6f6f6;
+    box-sizing: content-box;
+    height: 700px;
+    overflow-y: hidden;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    &:-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}

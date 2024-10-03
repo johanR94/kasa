@@ -1,0 +1,14 @@
+@import "../utils/variable";
+@import"../utils/mixins";
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    width: 1240px;
+    margin-left:5%;
+    &_logo{
+        height: 68px;
+    }
+}
