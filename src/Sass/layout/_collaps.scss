@@ -1,0 +1,34 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+
+.collaps {
+  &_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $tertiary-color;
+    border-radius: 10px 5px 10px 5px;
+    width: 100%;
+    height: 52px;
+    margin-top: 28px;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $primary-color;
+    &_arrow {
+      height: 15px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+        hue-rotate(241deg) brightness(100%) contrast(103%);
+    }
+  }
+}
+
+
+
+.deroulant {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 5%;
+  margin-bottom: 48px;
+}

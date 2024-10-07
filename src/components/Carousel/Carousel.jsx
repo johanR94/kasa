@@ -21,13 +21,13 @@ const Carousel = ({ images }) => {
     }
 
     return (
-        <section className='logement_carrousel'>
+        <section className='carousel'>
             <img 
                 src={images[currentImageIndex]} 
-                className='logement_picture' 
+                className='carousel_picture' 
                 alt={`Image ${currentImageIndex + 1}`}
             />
-            <div className='logement_arrows arrows'>
+            <div className='carousel_arrows arrows'>
                 <img 
                     src={arrowLeft} 
                     alt="Image précédente" 
@@ -40,6 +40,9 @@ const Carousel = ({ images }) => {
                     className='arrow_right' 
                     onClick={handleNextImage} 
                 />
+            </div>
+            <div className='carousel_counter'>
+                {currentImageIndex + 1} / {images.length}
             </div>
         </section>
     );

@@ -10,7 +10,7 @@ export default function Rates({rating}){
                 {[...Array(5)].map((star,index)=>{ 
                     const logementRate =  index +1
                     return (
-                        <img key={index} src={logementRate <=rating ? orangeStars : greyStars} alt="star" />
+                        <img className="presentation_host_rate--star" key={index} src={logementRate <=rating ? orangeStars : greyStars} alt="star" />
                     )
                  }
                )}

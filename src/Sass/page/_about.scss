@@ -1,0 +1,8 @@
+@import "../utils/variable";
+@import "../utils/mixins";
+
+.about {
+  &_content {
+    margin-bottom: 58px;
+  }
+}

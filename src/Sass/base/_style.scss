@@ -1,14 +1,17 @@
-@import '../utils/variable';
-@import '../utils/mixins';
-@import '../layout/header';
-@import '../layout/nav';
-@import '../layout/banner';
-@import '../layout/gallery';
-@import '../layout/card';
-@import '../layout/footer';
-@import '../page/home';
-@import '../page/about';
-@import '../page/error'; 
+@import "../utils/variable";
+@import "../utils/mixins";
+@import "../layout/header";
+@import "../layout/nav";
+@import "../layout/banner";
+@import "../layout/gallery";
+@import "../layout/carousel";
+@import "../layout/presentation";
+@import "../layout/collaps";
+@import "../layout/card";
+@import "../layout/footer";
+@import "../page/home";
+@import "../page/about";
+@import "../page/error";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 * {
@@ -16,27 +19,22 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
-  
 }
-.app{
+.app {
   @include flexCenterColumn;
   max-width: 1440px;
   margin-left: 40px;
 }
-.main{
-  width:1240px;
-  margin-left:5%;
+.main {
+  width: 1240px;
 }
 
-.too{
-  height: 15px;
-  filter: invert(62%) sepia(27%) saturate(7464%) hue-rotate(323deg) brightness(102%) contrast(125%);
-  
+.display {
+  display: block;
+  list-style: none;
+  background-color: $secondary-color;
+  padding: 15px;
 }
-
-.display{
-  visibility: visible;
-}
-.displayNone{
-  visibility: hidden;
+.displayNone {
+  display: none;
 }
