@@ -3,9 +3,7 @@
 
 .collaps {
   &_item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include FlexRowSpaceBetween;
     align-items: center;
     color: $tertiary-color;
     border-radius: 10px 5px 10px 5px;
@@ -14,21 +12,27 @@
     margin-top: 28px;
     padding: 0 10px 0 10px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-weight-500;
     background-color: $primary-color;
+    @include mobile-breakpoint  {
+      height: 30px;
+      font-size: 13px;
+    }
     &_arrow {
       height: 15px;
-      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-        hue-rotate(241deg) brightness(100%) contrast(103%);
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg) brightness(100%) contrast(103%);
+      transition: height 0.3s ease-out;
     }
   }
 }
-
-
 
 .deroulant {
   display: grid;
   grid-template-columns: 45% 45%;
   column-gap: 5%;
   margin-bottom: 48px;
+  @include mobile-breakpoint  {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
 }

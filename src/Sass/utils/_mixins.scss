@@ -1,10 +1,22 @@
-    @mixin flexCenterColumn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    }
+@mixin flexCenterColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-    @mixin borderRadius25{
-        border-radius: 25px;
-    }
+@mixin FlexRowSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin borderRadius25 {
+  border-radius: 25px;
+}
+
+@mixin mobile-breakpoint  {
+  @media screen and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
