@@ -16,6 +16,9 @@ const Carousel = ({ images }) => {
         );
     };
 
+    function HideCarouselCounter(images) {
+        return images.length <= 1 ? 'none' : '';
+      }
     if (images.length === 0) {
         return <div>No images available</div>;
     }
@@ -27,7 +30,7 @@ const Carousel = ({ images }) => {
                 className='carousel_picture' 
                 alt={`Image ${currentImageIndex + 1}`}
             />
-            <div className='carousel_arrows arrows'>
+            <div className='carousel_arrows arrows'style={{  display: HideCarouselCounter(images)}} >
                 <img 
                     src={arrowLeft} 
                     alt="Image précédente" 
@@ -41,7 +44,7 @@ const Carousel = ({ images }) => {
                     onClick={handleNextImage} 
                 />
             </div>
-            <div className='carousel_counter'>
+            <div className='carousel_counter' style={{  display: HideCarouselCounter(images)}}>
                 {currentImageIndex + 1} / {images.length}
             </div>
         </section>

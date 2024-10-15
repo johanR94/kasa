@@ -8,18 +8,29 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import FicheLogement from "./Pages/Logement/FicheLogement";
 
+// eslint-disable-next-line react/prop-types
+function Layout({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/FicheLogement/:id" element={<FicheLogement />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/ficheLogement/:id" element={<FicheLogement />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Layout>
       </div>
     </Router>
   );

@@ -42,12 +42,14 @@
     &_profil {
       display: flex;
       flex-direction: row;
+      justify-content: flex-end;
       @include mobile-breakpoint  {
         align-items: flex-end;
       }
     }
     &_rate {
-      gap: 4px;
+      display: flex;
+      gap: 10px;
       text-align: end;
       &--star {
         height: 24px;
@@ -63,6 +65,7 @@
     flex-direction: column;
     justify-content: unset;
     width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -78,6 +81,7 @@
     display: flex;
     align-items: center;
     padding: 0px 15px 0 15px;
+    margin-top: 5px;
   }
 }
 
@@ -85,6 +89,10 @@
   &_name {
     width: 70px;
     color: $primary-color;
+    font-size: 18px;
+    @include mobile-breakpoint{
+      font-size: 12px;
+    }
   }
   &_picture {
     border-radius: 50%;

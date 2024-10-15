@@ -32,18 +32,26 @@
   gap: 57px;
 }
 .header_nav_link {
-  border: none;
-  background-color: inherit;
   font-size: 24px;
   cursor: pointer;
+  color: black;
+  text-decoration-line: none;
 }
 @media screen and (max-width: 768px) {
   .header_nav_link {
     font-size: 12px;
   }
 }
-.header_nav_link:focus {
+.header_nav_active {
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
   text-decoration-line: underline;
+}
+@media screen and (max-width: 768px) {
+  .header_nav_active {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header_nav {
@@ -64,7 +72,6 @@
 .banner_img {
   width: 100%;
   height: 226px;
-  border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 25px;
   object-fit: cover;
@@ -161,6 +168,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 100%;
+  }
+}
 
 .presentation {
   display: flex;
@@ -208,6 +220,7 @@
 .presentation_host_profil {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 768px) {
   .presentation_host_profil {
@@ -215,7 +228,8 @@
   }
 }
 .presentation_host_rate {
-  gap: 4px;
+  display: flex;
+  gap: 10px;
   text-align: end;
 }
 .presentation_host_rate--star {
@@ -233,6 +247,7 @@
     flex-direction: column;
     justify-content: unset;
     width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -256,6 +271,12 @@
 .profil_name {
   width: 70px;
   color: #ff6060;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .profil_name {
+    font-size: 12px;
+  }
 }
 .profil_picture {
   border-radius: 50%;
@@ -283,6 +304,7 @@
   font-size: 18px;
   font-weight: 500;
   background-color: #ff6060;
+  transition: height 0.3s ease-out;
 }
 @media screen and (max-width: 768px) {
   .collaps_item {
@@ -293,14 +315,18 @@
 .collaps_item_arrow {
   height: 15px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg) brightness(100%) contrast(103%);
-  transition: height 0.3s ease-out;
+  transition: transform 0.3s ease-in-out;
+}
+.collaps_item_arrow.rotate {
+  transform: rotate(-180deg);
 }
 
 .deroulant {
   display: grid;
   grid-template-columns: 45% 45%;
-  column-gap: 5%;
+  column-gap: 10%;
   margin-bottom: 48px;
+  transition: height 0.3s ease-out;
 }
 @media screen and (max-width: 768px) {
   .deroulant {
@@ -330,6 +356,7 @@
 @media screen and (max-width: 768px) {
   .card_img {
     height: 100%;
+    width: 100%;
   }
 }
 .card_title {
@@ -346,6 +373,7 @@
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+    height: 255px;
   }
 }
 
@@ -373,7 +401,8 @@
   }
 }
 .footer_content_li_logo {
-  height: 5vh;
+  height: 40px;
+  width: 123px;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -394,6 +423,11 @@ h1 {
 .about_content {
   margin-bottom: 58px;
 }
+@media screen and (max-width: 768px) {
+  .about_content {
+    padding: 0;
+  }
+}
 
 .error {
   display: flex;
@@ -405,17 +439,40 @@ h1 {
   color: #ff6060;
   font-size: 288px;
   font-weight: 700;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .error_title {
+    font-size: 96px;
+    margin: 80px 0;
+  }
 }
 .error_text {
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .error_text {
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
 }
 .error_return {
   text-decoration: underline;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .error_return {
+    margin-bottom: 55px;
+    font-size: 14px;
+  }
 }
 
 * {
@@ -423,6 +480,7 @@ h1 {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  outline: 1px solid red;
 }
 
 body {
@@ -436,10 +494,11 @@ body {
   justify-content: center;
   flex-direction: column;
   max-width: 1440px;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .app {
-    color: blue;
+    width: 100%;
   }
 }
 
@@ -457,14 +516,21 @@ body {
 }
 
 .display {
-  display: block;
   list-style: none;
   background-color: #f6f6f6;
-  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  max-height: fit-content;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .displayNone {
-  display: none;
+  overflow: hidden;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

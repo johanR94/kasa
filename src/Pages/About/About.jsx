@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
 import ImgBannerHome from "../../assets/ImgBannerAbout.png";
 import Main from "../../components/Main/Main";
 import Coollaps from "../../components/Collaps/Coollaps";
 
 export default function About() {
+    useEffect(() => {
+        document.title = "About - Kasa";
+      }, [])
     const aboutContent = [
         {
             title: 'Fiabilité',

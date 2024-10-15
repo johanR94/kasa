@@ -19,6 +19,7 @@
     @include borderRadius25;
     @include mobile-breakpoint  {
       height: 100%;
+      width: 100%;
     }
   }
   &_title {
@@ -34,5 +35,6 @@
   }
   @include mobile-breakpoint  {
     width: 100%;
+    height: 255px;
   }
 }

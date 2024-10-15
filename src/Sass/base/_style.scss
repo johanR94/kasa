@@ -19,16 +19,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
+  outline: 1px solid red;
 }
 body {
   display: flex;
   justify-content: center;
+  
 }
 .app {
   @include flexCenterColumn;
   max-width: $max-width-screen;
+  width: 100%;
   @include mobile-breakpoint{
-      color: blue;
+    width: 100%;
   }
  
 }
@@ -44,11 +47,19 @@ body {
 }
 
 .display {
-  display: block;
   list-style: none;
   background-color: $secondary-color;
-  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  max-height: fit-content; // tu peux ajuster selon le contenu
+  opacity: 1;
+  transition:all 0.3s ease-in-out;
+
 }
 .displayNone {
-  display: none;
+  overflow: hidden;
+  list-style: none;
+  transition:all 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
 }

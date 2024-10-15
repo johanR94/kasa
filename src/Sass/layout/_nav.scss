@@ -5,16 +5,21 @@
   align-items: flex-end;
   gap: 57px;
   &_link {
-    border: none;
-    background-color: inherit;
     font-size: 24px;
     cursor: pointer;
+    color: black;
+    text-decoration-line: none;
     @include mobile-breakpoint {
       font-size: 12px;
     }
-    &:focus {
-      text-decoration-line: underline;
-      
+  }
+  &_active {
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    text-decoration-line: underline;
+    @include mobile-breakpoint {
+      font-size: 12px;
     }
   }
   @include mobile-breakpoint {

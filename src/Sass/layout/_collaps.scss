@@ -14,6 +14,8 @@
     font-size: 18px;
     font-weight: $font-weight-500;
     background-color: $primary-color;
+    transition: height 0.3s ease-out;
+
     @include mobile-breakpoint  {
       height: 30px;
       font-size: 13px;
@@ -21,7 +23,11 @@
     &_arrow {
       height: 15px;
       filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg) brightness(100%) contrast(103%);
-      transition: height 0.3s ease-out;
+      transition: transform 0.3s ease-in-out;
+      &.rotate {
+        transform: rotate(-180deg);
+      }
+      
     }
   }
 }
@@ -29,8 +35,10 @@
 .deroulant {
   display: grid;
   grid-template-columns: 45% 45%;
-  column-gap: 5%;
+  column-gap: 10%;
   margin-bottom: 48px;
+  transition: height 0.3s ease-out;
+
   @include mobile-breakpoint  {
     grid-template-columns: 100%;
     width: 100%;
