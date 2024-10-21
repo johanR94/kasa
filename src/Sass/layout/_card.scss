@@ -17,7 +17,7 @@
     display: block;
     object-fit: cover;
     @include borderRadius25;
-    @include mobile-breakpoint  {
+    @include mobile-breakpoint {
       height: 100%;
       width: 100%;
     }
@@ -33,7 +33,7 @@
     text-align: left;
     color: $secondary-color;
   }
-  @include mobile-breakpoint  {
+  @include mobile-breakpoint {
     width: 100%;
     height: 255px;
   }

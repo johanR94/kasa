@@ -41,8 +41,8 @@
     }
     &_profil {
       display: flex;
-      flex-direction: row;
       justify-content: flex-end;
+      gap: 10px;
       @include mobile-breakpoint  {
         align-items: flex-end;
       }

@@ -9,7 +9,7 @@ import Main from "../../components/Main/Main";
 const FicheLogement = () => {
   useEffect(() => {
     document.title = "Logement - Kasa";
-  }, [])
+  }, []);
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
 

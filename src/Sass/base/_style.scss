@@ -19,26 +19,26 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
-  outline: 1px solid red;
 }
 body {
   display: flex;
   justify-content: center;
-  
 }
 .app {
   @include flexCenterColumn;
   max-width: $max-width-screen;
   width: 100%;
-  @include mobile-breakpoint{
+  @include desktopMedium-breakpoint {
     width: 100%;
   }
- 
+  @include mobile-breakpoint {
+    width: 100%;
+  }
 }
 .main {
   width: 100%;
   max-width: 1240px;
-  @include mobile-breakpoint  {
+  @include mobile-breakpoint {
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -51,15 +51,14 @@ body {
   background-color: $secondary-color;
   border-radius: 0 0 15px 15px;
   padding: 20px;
-  max-height: fit-content; // tu peux ajuster selon le contenu
+  max-height: fit-content;
   opacity: 1;
-  transition:all 0.3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 }
 .displayNone {
   overflow: hidden;
   list-style: none;
-  transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   max-height: 0;
   opacity: 0;
 }

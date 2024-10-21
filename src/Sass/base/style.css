@@ -219,8 +219,8 @@
 }
 .presentation_host_profil {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  gap: 10px;
 }
 @media screen and (max-width: 768px) {
   .presentation_host_profil {
@@ -265,6 +265,7 @@
     display: flex;
     align-items: center;
     padding: 0px 15px 0 15px;
+    margin-top: 5px;
   }
 }
 
@@ -404,6 +405,11 @@
   height: 40px;
   width: 123px;
 }
+@media screen and (min-width: 769px) and (max-width: 1230px) {
+  .footer {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .footer {
     width: 100%;
@@ -424,7 +430,7 @@ h1 {
   margin-bottom: 58px;
 }
 @media screen and (max-width: 768px) {
-  .about_content {
+  .about {
     padding: 0;
   }
 }
@@ -480,7 +486,6 @@ h1 {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
-  outline: 1px solid red;
 }
 
 body {
@@ -495,6 +500,11 @@ body {
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
+}
+@media screen and (min-width: 769px) and (max-width: 1230px) {
+  .app {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .app {

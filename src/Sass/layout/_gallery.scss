@@ -18,7 +18,7 @@
   &:-webkit-scrollbar {
     display: none; /* Safari and Chrome */
   }
-  @include mobile-breakpoint  {
+  @include mobile-breakpoint {
     grid-template-columns: 100%;
     background-color: unset;
   }

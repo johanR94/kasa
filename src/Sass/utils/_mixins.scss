@@ -15,9 +15,14 @@
   border-radius: 25px;
 }
 
-@mixin mobile-breakpoint  {
-  @media screen and (max-width: map-get($breakpoints, desktop)) {
+@mixin mobile-breakpoint {
+  @media screen and (max-width: map-get($breakpoints, desktopM)) {
     @content;
   }
 }
 
+@mixin desktopMedium-breakpoint {
+  @media screen and (min-width: 769px) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

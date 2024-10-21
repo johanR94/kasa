@@ -9,12 +9,12 @@
   &_logo {
     width: 210px;
     height: 68px;
-    @include mobile-breakpoint  {
+    @include mobile-breakpoint {
       width: 144px;
       height: 44px;
     }
   }
-  @include mobile-breakpoint  {
+  @include mobile-breakpoint {
     width: 100%;
     padding: 0 20px;
   }
