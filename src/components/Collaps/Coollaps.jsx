@@ -1,32 +1,33 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
-import arrowUp from "../../assets/arrowUp.svg";
+import { useState } from "react"; // Importation de useState pour gérer l'état
+import arrowUp from "../../assets/arrowUp.svg"; // Importation de l'icône de flèche
 
 export default function Coollaps({ title, content }) {
-  // Définir l'état initial sur true pour que arrowUp soit affiché par défaut
+  // Définir l'état initial sur true pour que le contenu soit masqué par défaut
   const [toggle, setToggle] = useState(true);
 
   return (
     <>
-      <div className="collaps">
-        <div className="collaps_item" onClick={() => setToggle(!toggle)}>
-          <h2 className="collaps_item_title">{title}</h2>
+      <div className="collaps"> {/* Conteneur principal du composant */}
+        <div className="collaps_item" onClick={() => setToggle(!toggle)}> {/* Élément cliquable pour basculer l'affichage */}
+          <h2 className="collaps_item_title">{title}</h2> {/* Affichage du titre */}
           <img
-            className={`collaps_item_arrow ${!toggle ? "rotate" : ""}`}
+            className={`collaps_item_arrow ${!toggle ? "rotate" : ""}`} // Applique la classe "rotate" si toggle est faux
             src={arrowUp}
-            alt="toggle icon"
+            alt="toggle icon" // Texte alternatif pour l'image
           />
         </div>
-        {Array.isArray(content) ? (
-          <ul className={toggle ? "displayNone" : "display"}>
-            {content.map((item) => (
-              <li key={item}>{item}</li>
+        {Array.isArray(content) ? ( // Vérifie si le contenu est un tableau
+          <ul className={toggle ? "collaps_rollup" : "collaps_unrolled"}> {/* Affichage de la liste ou masquage */}
+            {content.map((item) => ( // Itération sur chaque élément du tableau
+              <li key={item}>{item}</li> // Élément de liste avec une clé unique
             ))}
           </ul>
         ) : (
-          <p className={toggle ? "displayNone" : "display"}>{content}</p>
+          <p className={toggle ? "collaps_rollup" :"collaps_unrolled"}>{content}</p> // Affiche le contenu si ce n'est pas un tableau
         )}
       </div>
     </>
   );
 }
+

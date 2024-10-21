@@ -1,24 +1,25 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Importation de NavLink pour la navigation
 
 export default function Nav() {
   return (
-    <nav className="header_nav">
+    <nav className="header_nav"> {/* Conteneur de navigation */}
       <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive ? "header_nav_active" : "header_nav_link"
+        to="/" // Lien vers la page d'accueil
+        className={({ isActive }) => // Fonction pour définir la classe en fonction de l'état actif
+          isActive ? "header_nav_active" : "header_nav_link" // Classe active si le lien est actif
         }
       >
-        Accueil
+        Accueil {/* Texte du lien */}
       </NavLink>
       <NavLink
-        to="/About"
-        className={({ isActive }) =>
-          isActive ? "header_nav_active" : "header_nav_link"
+        to="/About" // Lien vers la page "À propos"
+        className={({ isActive }) => // Fonction pour définir la classe en fonction de l'état actif
+          isActive ? "header_nav_active" : "header_nav_link" // Classe active si le lien est actif
         }
       >
-        A propos
+        A propos {/* Texte du lien */}
       </NavLink>
     </nav>
   );
 }
+

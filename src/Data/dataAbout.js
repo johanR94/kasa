@@ -1,4 +1,4 @@
-
+// Data de la page About
 export const aboutContent = [
     {
       title: "Fiabilité",

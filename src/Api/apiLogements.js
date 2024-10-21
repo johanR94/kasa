@@ -1,7 +1,8 @@
 /* eslint-disable no-useless-catch */
-// Extrait de apiLogement.js
+// Récuperation des données 
 export async function fetchLogementData(id = null) {
     try {
+        // Peremet de différencier la requête selon si l'url dispose d'une ID
         const url = id ? `/logement/${id}` : `/logement.json`;
         const response = await fetch(url);
 

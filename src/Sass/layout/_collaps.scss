@@ -32,6 +32,24 @@
   }
 }
 
+.collaps_unrolled{
+  list-style: none;
+  background-color: $secondary-color;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  max-height: fit-content;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.collaps_rollup {
+  overflow: hidden;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+
 .deroulant {
   display: grid;
   grid-template-columns: 45% 45%;
