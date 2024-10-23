@@ -1,3 +1,4 @@
+
 .header_nav {
   display: flex;
   flex-direction: row;
@@ -17,7 +18,8 @@
     font-size: 24px;
     cursor: pointer;
     color: black;
-    text-decoration-line: underline;
+    text-decoration: none;
+    border-bottom: solid 2px black;
     @include mobile-breakpoint {
       font-size: 12px;
     }

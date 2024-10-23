@@ -14,13 +14,13 @@
 @mixin borderRadius25 {
   border-radius: 25px;
 }
-
+//mobile responsive
 @mixin mobile-breakpoint {
   @media screen and (max-width: map-get($breakpoints, desktopM)) {
     @content;
   }
 }
-
+//Media pour les ecrans de moyennes taille
 @mixin desktopMedium-breakpoint {
   @media screen and (min-width: 769px) and (max-width: map-get($breakpoints, desktop)) {
     @content;

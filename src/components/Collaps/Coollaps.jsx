@@ -10,16 +10,16 @@ export default function Coollaps({ title, content }) {
     <>
       <div className="collaps"> {/* Conteneur principal du composant */}
         <div className="collaps_item" onClick={() => setToggle(!toggle)}> {/* Élément cliquable pour basculer l'affichage */}
-          <h2 className="collaps_item_title">{title}</h2> {/* Affichage du titre */}
+          <h2 className="collaps_item_title">{title}</h2> 
           <img
             className={`collaps_item_arrow ${!toggle ? "rotate" : ""}`} // Applique la classe "rotate" si toggle est faux
             src={arrowUp}
-            alt="toggle icon" // Texte alternatif pour l'image
+            alt="toggle icon"
           />
         </div>
         {Array.isArray(content) ? ( // Vérifie si le contenu est un tableau
           <ul className={toggle ? "collaps_rollup" : "collaps_unrolled"}> {/* Affichage de la liste ou masquage */}
-            {content.map((item) => ( // Itération sur chaque élément du tableau
+            {content.map((item) => ( 
               <li key={item}>{item}</li> // Élément de liste avec une clé unique
             ))}
           </ul>

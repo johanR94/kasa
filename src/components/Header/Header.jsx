@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav.jsX";
 export default function Header() {
   return (
     <header className="header">
-      <img className="header_logo" src={logoHeader} alt=""></img>
+      <img className="header_logo" src={logoHeader} alt="Logo kasa"/>
       <Nav />
     </header>
   );

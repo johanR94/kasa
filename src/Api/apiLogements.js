@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-catch */
-// Récuperation des données 
+//! Récuperation des données de logement depuis le fichier JSON
 export async function fetchLogementData(id = null) {
     try {
         // Peremet de différencier la requête selon si l'url dispose d'une ID

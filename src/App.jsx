@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importation des composants de routage
-
 import "./Sass/base/style.css"; // Importation des styles CSS
 import Home from "./Pages/Home/Home"; // Importation de la page d'accueil
 import About from "./Pages/About/About"; // Importation de la page "À propos"
