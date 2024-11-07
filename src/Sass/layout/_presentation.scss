@@ -73,7 +73,7 @@
 
 .tag {
   background-color: $primary-color;
-  border-radius: 10px;
+ @include borderRadius10;
   padding: 1px 25px 0 25px;
   text-align: center;
   font-size: 14px;

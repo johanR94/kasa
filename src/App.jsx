@@ -3,8 +3,8 @@ import "./Sass/base/style.css"; // Importation des styles CSS
 import Home from "./Pages/Home/Home"; // Importation de la page d'accueil
 import About from "./Pages/About/About"; // Importation de la page "À propos"
 import ErrorPage from "./Pages/Error/Error_page"; // Importation de la page d'erreur
-import Footer from "./components/Footer/Footer"; // Importation du composant Footer
-import Header from "./components/Header/Header"; // Importation du composant Header
+import Footer from "./Components/Footer/Footer"; // Importation du composant Footer
+import Header from "./Components/Header/Header"; // Importation du composant Header
 import FicheLogement from "./Pages/Logement/FicheLogement"; // Importation de la page de détails du logement
 
 // Composant de mise en page pour envelopper le Header et le Footer autour des enfants

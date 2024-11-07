@@ -3,7 +3,7 @@
 export async function fetchLogementData(id = null) {
     try {
         // Peremet de différencier la requête selon si l'url dispose d'une ID
-        const url = id ? `/logement/${id}` : `/logement.json`;
+        const url = id ? `/logement/${id}` : `/src/Data/logement.json`;
         const response = await fetch(url);
 
         if (!response.ok) {

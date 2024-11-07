@@ -6,9 +6,13 @@
   padding: 0 40px;
   &_content {
     margin-bottom: 58px;
+    @include mobile-breakpoint {
+    margin: 28px 0;
+    }
   }
   @include mobile-breakpoint {
     padding: 0;
     height: 335px;
+    min-height: fit-content;
   }
 }

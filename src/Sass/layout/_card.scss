@@ -6,7 +6,7 @@
   width: 85%;
   height: 340px;
   position: relative;
-  @include borderRadius25;
+
   &_link {
     width: 100%;
     text-decoration: none;
@@ -16,7 +16,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    @include borderRadius25;
+   @include borderRadius10;
     @include mobile-breakpoint {
       height: 100%;
       width: 100%;
@@ -34,7 +34,7 @@
     color: $secondary-color;
   }
   @include mobile-breakpoint {
-    width: 100%;
+    width: 95%;
     height: 205px;
   }
 }
