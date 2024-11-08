@@ -13,7 +13,7 @@
     @include mobile-breakpoint {
       width: 100%;
       height: 255px;
-     @include borderRadius10;
+      @include borderRadius10;
     }
   }
   &_arrows {

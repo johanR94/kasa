@@ -114,15 +114,9 @@
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-items: center;
-  row-gap: 7%;
-  padding: 4% 0 4% 0;
-  margin: 0 0 2% 0;
+  box-sizing: content-box;
   border-radius: 25px;
   background-color: #f6f6f6;
-  box-sizing: content-box;
   height: 700px;
   overflow-y: hidden;
   overflow: scroll;
@@ -134,10 +128,7 @@
 }
 @media screen and (max-width: 768px) {
   .gallery {
-    grid-template-columns: 100%;
     background-color: unset;
-    row-gap: 2%;
-    height: 630px;
     border-radius: unset;
   }
 }
@@ -192,11 +183,6 @@
   }
 }
 
-.presentation {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0 26px 0;
-}
 .presentation_location {
   width: 75%;
 }
@@ -220,20 +206,9 @@
   }
 }
 .presentation_location_tags {
-  display: flex;
-  flex-direction: row;
+  gap: 10px;
   color: #ffffff;
   list-style: none;
-  gap: 10px;
-  margin-top: 20px;
-}
-@media screen and (max-width: 768px) {
-  .presentation_host {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
 }
 .presentation_host_profil {
   display: flex;
@@ -259,14 +234,6 @@
   .presentation_host_rate--star {
     height: 14px;
     width: 14px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .presentation {
-    flex-direction: column;
-    justify-content: unset;
-    width: 100%;
-    margin-top: 10px;
   }
 }
 
@@ -461,6 +428,22 @@
   }
 }
 
+.gallery {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 33% 33% 33%;
+  row-gap: 7%;
+  padding: 4% 0 4% 0;
+  margin: 0 0 2% 0;
+}
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 100%;
+    row-gap: 2%;
+    height: 630px;
+  }
+}
+
 .about {
   width: 100%;
   padding: 0 40px;
@@ -524,6 +507,44 @@
   .error_return {
     margin-bottom: 55px;
     font-size: 14px;
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 26px 0;
+}
+@media screen and (max-width: 768px) {
+  .presentation {
+    flex-direction: column;
+    justify-content: unset;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.presentation_location_tags {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .presentation_host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.presentation_host_profil {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .presentation_host_profil {
+    align-items: flex-end;
+    gap: 0;
   }
 }
 

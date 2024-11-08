@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import  aboutContent  from "../../Data/DataAbout.json";
+import aboutContent from "../../Data/DataAbout.json";
 import Banner from "../../Components/Banner/Banner";
 import ImgBannerAbout from "../../assets/ImgBannerAbout.png";
 import Main from "../../Components/Main/Main";
@@ -16,9 +16,7 @@ export default function About() {
         <Banner img={ImgBannerAbout} />
         <section className="about">
           <div className="about_content">
-            
             {aboutContent.map((item, index) => (
-              
               <Coollaps key={index} title={item.title} content={item.content} />
             ))}
           </div>

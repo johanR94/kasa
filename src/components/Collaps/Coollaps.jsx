@@ -8,9 +8,13 @@ export default function Coollaps({ title, content }) {
 
   return (
     <>
-      <div className="collaps"> {/* Conteneur principal du composant */}
-        <div className="collaps_item" onClick={() => setToggle(!toggle)}> {/* Élément cliquable pour basculer l'affichage */}
-          <h2 className="collaps_item_title">{title}</h2> 
+      <div className="collaps">
+        {" "}
+        {/* Conteneur principal du composant */}
+        <div className="collaps_item" onClick={() => setToggle(!toggle)}>
+          {" "}
+          {/* Élément cliquable pour basculer l'affichage */}
+          <h2 className="collaps_item_title">{title}</h2>
           <img
             className={`collaps_item_arrow ${!toggle ? "rotate" : ""}`} // Applique la classe "rotate" si toggle est faux
             src={arrowUp}
@@ -18,16 +22,19 @@ export default function Coollaps({ title, content }) {
           />
         </div>
         {Array.isArray(content) ? ( // Vérifie si le contenu est un tableau
-          <ul className={toggle ? "collaps_rollup" : "collaps_unrolled"}> {/* Affichage de la liste ou masquage */}
-            {content.map((item) => ( 
+          <ul className={toggle ? "collaps_rollup" : "collaps_unrolled"}>
+            {" "}
+            {/* Affichage de la liste ou masquage */}
+            {content.map((item) => (
               <li key={item}>{item}</li> // Élément de liste avec une clé unique
             ))}
           </ul>
         ) : (
-          <p className={toggle ? "collaps_rollup" :"collaps_unrolled"}>{content}</p> // Affiche le contenu si ce n'est pas un tableau
+          <p className={toggle ? "collaps_rollup" : "collaps_unrolled"}>
+            {content}
+          </p> // Affiche le contenu si ce n'est pas un tableau
         )}
       </div>
     </>
   );
 }
-

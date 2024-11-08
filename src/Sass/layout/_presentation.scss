@@ -3,9 +3,6 @@
 
 //Corresponds à la présentation du logement 
 .presentation {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0 26px 0;
     &_location {
     width: 75%;
 
@@ -25,34 +22,13 @@
       }
     }
     &_tags {
-      display: flex;
-      flex-direction: row;
+      gap: 10px;
       color: $tertiary-color;
       list-style: none;
-      gap: 10px;
-      margin-top: 20px;
     }
   }
   &_host {
-    @include mobile-breakpoint  {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    &_profil {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      @include mobile-breakpoint  {
-        align-items: flex-end;
-        gap: 0;
-      }
-    }
     &_rate {
-      display: flex;
-      gap: 10px;
-      text-align: end;
       &--star {
         height: 24px;
         width: 24px;
@@ -63,27 +39,15 @@
       }
     }
   }
-  @include mobile-breakpoint  {
-    flex-direction: column;
-    justify-content: unset;
-    width: 100%;
-    margin-top: 10px;
-  }
 }
 
 .tag {
   background-color: $primary-color;
  @include borderRadius10;
-  padding: 1px 25px 0 25px;
-  text-align: center;
   font-size: 14px;
   font-weight: 700;
   @include mobile-breakpoint  {
     font-size: 10px;
-    display: flex;
-    align-items: center;
-    padding: 0px 15px 0 15px;
-    margin-top: 5px;
   }
 }
 

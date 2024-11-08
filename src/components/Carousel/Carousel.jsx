@@ -60,10 +60,11 @@ const Carousel = ({ images }) => {
         className="carousel_counter"
         style={{ display: HideCarouselCounter(images) }} // Affichage du compteur selon le nombre d'images
       >
-        {currentImageIndex + 1} / {images.length} {/* Affichage de l'index et du total d'images */}
+        {currentImageIndex + 1} / {images.length}{" "}
+        {/* Affichage de l'index et du total d'images */}
       </div>
     </section>
   );
 };
 
-export default Carousel; 
+export default Carousel;

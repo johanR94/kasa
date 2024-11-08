@@ -5,6 +5,7 @@ import Carousel from "../../Components/Carousel/Carousel";
 import Presentation from "../../Components/PresentationLogement/Presentation";
 import Coollaps from "../../Components/Collaps/Coollaps";
 import Main from "../../Components/Main/Main";
+import Profil from "../../Components/Profil/Profil";
 
 const FicheLogement = () => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const FicheLogement = () => {
     fetchData();
   }, [id]);
 
-  //Renvoie la page d'erreur 
+  //Renvoie la page d'erreur
   useEffect(() => {
     if (error) {
       navigate("/Error_page");
@@ -50,14 +51,18 @@ const FicheLogement = () => {
   return (
     <Main>
       <Carousel images={logement.pictures} />
-      <Presentation
-        title={logement.title}
-        tags={logement.tags}
-        location={logement.location}
-        hostName={logement.host.name}
-        hostPicture={logement.host.picture}
-        rating={logement.rating}
-      />
+      <section className="presentation">
+        <Presentation
+          title={logement.title}
+          tags={logement.tags}
+          location={logement.location}
+        />
+        <Profil
+          hostName={logement.host.name}
+          hostPicture={logement.host.picture}
+          rating={logement.rating}
+        />
+      </section>
       <div className="deroulant">
         <Coollaps title={"Description"} content={logement.description} />
         <Coollaps title={"Équipements"} content={logement.equipments} />

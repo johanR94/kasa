@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // Rendu de l'application dans le DOM
 root.render(
-  <React.StrictMode> {/* Mode strict pour activer des vérifications supplémentaires en développement */}
+  <React.StrictMode>
     <App /> {/* Affichage du composant App */}
   </React.StrictMode>
 );

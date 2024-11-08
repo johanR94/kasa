@@ -1,15 +1,9 @@
 @import "../utils/variable";
 @import "../utils/mixins";
 .gallery {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-items: center;
-  row-gap: 7%;
-  padding: 4% 0 4% 0;
-  margin: 0 0 2% 0;
+  box-sizing: content-box;
   @include borderRadius25;
   background-color: $secondary-color;
-  box-sizing: content-box;
   height: 700px;
   overflow-y: hidden;
   overflow: scroll;
@@ -19,10 +13,7 @@
     display: none; /* Safari and Chrome */
   }
   @include mobile-breakpoint {
-    grid-template-columns: 100%;
     background-color: unset;
-    row-gap: 2%;
-    height: 630px;
     border-radius: unset;
   }
 }

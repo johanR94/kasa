@@ -16,7 +16,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
-   @include borderRadius10;
+    @include borderRadius10;
     @include mobile-breakpoint {
       height: 100%;
       width: 100%;
