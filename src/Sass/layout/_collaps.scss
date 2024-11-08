@@ -54,17 +54,3 @@
   max-height: 0;
   opacity: 0;
 }
-
-//Element parent des collaps sur la page de presentation du logement
-.deroulant {
-  display: grid;
-  grid-template-columns: 45% 45%;
-  column-gap: 10%;
-  margin-bottom: 48px;
-  transition: height 0.3s ease-out;
-
-  @include mobile-breakpoint {
-    grid-template-columns: 100%;
-    width: 100%;
-  }
-}
