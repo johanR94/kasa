@@ -1,9 +1,9 @@
 /* eslint-disable no-useless-catch */
 //! Récuperation des données de logement depuis le fichier JSON
-export async function fetchLogementData(id = null) {
+export async function fetchLogementData() {
     try {
         // Peremet de différencier la requête selon si l'url dispose d'une ID
-        const url = id ? `/logement/${id}` : `/src/Data/logement.json`;
+        const url =`/src/Data/logement.json`;
         const response = await fetch(url);
 
         if (!response.ok) {

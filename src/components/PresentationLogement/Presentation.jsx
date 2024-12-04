@@ -1,13 +1,8 @@
-import Profil from "../Profil/Profil";
-
 /* eslint-disable react/prop-types */
 export default function Presentation({
   title, // Titre de la présentation
   tags, // Tags associés à la présentation
   location, // Localisation de la présentation
-  hostName, // Nom de l'hôte
-  hostPicture, // Photo de l'hôte
-  rating, //Note de l'hôte
 }) {
   return (
     <>
