@@ -20,9 +20,9 @@ const Carousel = ({ images }) => {
   };
 
   // Fonction pour masquer le compteur si une seule image
-  function HideCarouselCounter(images) {
+  const HideCarouselCounter = (images) => {
     return images.length <= 1 ? "none" : ""; // Retourne "none" si une seule image
-  }
+  };
 
   // Si aucune image n'est disponible, afficher un message
   if (images.length === 0) {

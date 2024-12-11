@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Importez useNavigate
 import { fetchLogementData } from "../../Api/apiLogements";
 import Carousel from "../../Components/Carousel/Carousel";
-import Presentation from "../../Components/PresentationLogement/Presentation";
-import Coollaps from "../../Components/Collaps/Coollaps";
+import Presentation from "../../Components/Presentation/Presentation";
+import Collaps from "../../Components/Collaps/Collaps";
 import Main from "../../Components/Main/Main";
 import Profil from "../../Components/Profil/Profil";
 
-const FicheLogement = () => {
+export default function Accomodation() {
   useEffect(() => {
     document.title = "Logement - Kasa";
   }, []);
@@ -64,11 +64,9 @@ const FicheLogement = () => {
         />
       </section>
       <div className="deroulant">
-        <Coollaps title={"Description"} content={logement.description} />
-        <Coollaps title={"Équipements"} content={logement.equipments} />
+        <Collaps title={"Description"} content={logement.description} />
+        <Collaps title={"Équipements"} content={logement.equipments} />
       </div>
     </Main>
   );
-};
-
-export default FicheLogement;
+}

@@ -26,12 +26,15 @@
     display: block;
     position: absolute;
     bottom: 4%;
+    padding: 2%;
     width: 50%;
     margin-left: 5%;
     font-size: 18px;
     font-weight: $font-weight-700;
     text-align: left;
     color: $secondary-color;
+    background-color: rgba(0, 0, 0, 0.2509803922);
+    @include borderRadius10;
   }
   @include mobile-breakpoint {
     width: 95%;

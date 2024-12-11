@@ -1,8 +1,11 @@
-# React + Vite
+Projet n°7 OpenClasseroom : Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site de locatation d'appartement entre particulier (react,js,html,css)
 
-Currently, two official plugins are available:
+Initialisation du projet :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1- Télècharger le depository github du projet
+
+2- Executez la commande npm install
+
+3- Executez la commande npm run dev

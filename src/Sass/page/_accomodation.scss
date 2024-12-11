@@ -17,6 +17,9 @@
       flex-direction: row;
       margin-top: 20px;
     }
+    @include mobile-breakpoint {
+      width: 85%;
+    }
   }
   &_host {
     @include mobile-breakpoint {
@@ -43,12 +46,12 @@
 }
 
 .tag {
-  padding: 1px 25px 0 25px;
+  padding: 3px 25px;
   text-align: center;
   @include mobile-breakpoint {
     display: flex;
     align-items: center;
-    padding: 0px 15px 0 15px;
+    padding: 4px 9px;
     margin-top: 5px;
   }
 }
