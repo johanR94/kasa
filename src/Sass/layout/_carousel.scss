@@ -15,6 +15,9 @@
       height: 255px;
       @include borderRadius10;
     }
+    @include desktopLarge-breakpoint {
+      height: 540px;
+    }
   }
   &_arrows {
     position: absolute;

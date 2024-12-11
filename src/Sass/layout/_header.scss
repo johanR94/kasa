@@ -10,12 +10,16 @@
     width: 210px;
     height: 68px;
     @include mobile-breakpoint {
-      width: 144px;
+      width: 113px;
       height: 44px;
     }
   }
   @include mobile-breakpoint {
     text-transform: uppercase;
-    padding: 0 25px;
+    padding: 0 20px;
+  }
+  @include desktopLarge-breakpoint {
+    max-width: none;
+    width: 98%;
   }
 }

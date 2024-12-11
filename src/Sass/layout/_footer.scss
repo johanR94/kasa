@@ -30,4 +30,7 @@
     width: 100%;
     height: 209px;
   }
+  @include desktopLarge-breakpoint {
+    width: 100%;
+  }
 }

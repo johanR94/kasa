@@ -16,4 +16,7 @@
     background-color: unset;
     border-radius: unset;
   }
+  @include desktopLarge-breakpoint {
+    height: 742px;
+  }
 }

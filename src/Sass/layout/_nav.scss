@@ -11,6 +11,10 @@
     text-decoration-line: none;
     @include mobile-breakpoint {
       font-size: 12px;
+      padding-top: 3px;
+    }
+    @include desktopLarge-breakpoint {
+      font-size: 40px;
     }
   }
   &_active {
@@ -21,6 +25,10 @@
     border-bottom: solid 2px black;
     @include mobile-breakpoint {
       font-size: 12px;
+      padding-top: 3px;
+    }
+    @include desktopLarge-breakpoint {
+      font-size: 40px;
     }
   }
   @include mobile-breakpoint {

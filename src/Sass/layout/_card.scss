@@ -35,9 +35,15 @@
     color: $secondary-color;
     background-color: rgba(0, 0, 0, 0.2509803922);
     @include borderRadius10;
+    @include desktopLarge-breakpoint {
+      font-size: 25px;
+    }
   }
   @include mobile-breakpoint {
     width: 95%;
     height: 205px;
+  }
+  @include desktopLarge-breakpoint {
+    height: 400px;
   }
 }

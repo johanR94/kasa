@@ -40,6 +40,9 @@
         align-items: flex-end;
         gap: 0;
       }
+      @include desktopLarge-breakpoint {
+        align-items: center;
+      }
     }
     &_rate {
       display: flex;

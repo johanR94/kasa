@@ -16,6 +16,9 @@
       height: 111px;
       @include borderRadius10;
     }
+    @include desktopLarge-breakpoint {
+      height: 250px;
+    }
   }
   &_text {
     @include flexCenterColumn;
