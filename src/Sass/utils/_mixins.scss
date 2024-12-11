@@ -14,7 +14,7 @@
 @mixin borderRadius25 {
   border-radius: 25px;
 }
-@mixin borderRadius10{
+@mixin borderRadius10 {
   border-radius: 10px;
 }
 //mobile responsive
@@ -26,6 +26,14 @@
 //Media pour les ecrans de moyennes taille
 @mixin desktopMedium-breakpoint {
   @media screen and (min-width: 769px) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+//Media pour les écrans plus large
+
+@mixin desktopLarge-breakpoint {
+  @media screen and (min-width: 1800px) {
     @content;
   }
 }

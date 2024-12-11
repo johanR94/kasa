@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Importez useNavigate
 import { fetchLogementData } from "../../Api/apiLogements";
-import Carousel from "../../Components/Carousel/Carousel";
-import Presentation from "../../Components/Presentation/Presentation";
-import Collaps from "../../Components/Collaps/Collaps";
-import Main from "../../Components/Main/Main";
-import Profil from "../../Components/Profil/Profil";
+import Carousel from "../../Components/Carousel";
+import Presentation from "../../Components/Presentation";
+import Collaps from "../../Components/Collaps";
+import Main from "../../Components/Main";
+import Profil from "../../Components/Profil";
 
 export default function Accomodation() {
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Accomodation() {
   //Renvoie la page d'erreur
   useEffect(() => {
     if (error) {
-      navigate("/Error_page");
+      navigate("/Error");
     }
   }, [error, navigate]);
 

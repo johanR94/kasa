@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import aboutContent from "../../Data/DataAbout.json";
-import Banner from "../../Components/Banner/Banner";
+import Banner from "../../Components/Banner";
 import ImgBannerAbout from "../../assets/ImgBannerAbout.png";
-import Main from "../../Components/Main/Main";
-import Collaps from "../../Components/Collaps/Collaps";
+import Main from "../../Components/Main";
+import Collaps from "../../Components/Collaps";
 
 export default function About() {
   //!-- Use effect for title

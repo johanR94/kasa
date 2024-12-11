@@ -1,24 +1,25 @@
 @import "../utils/variable";
 @import "../utils/mixins";
 
-//Corresponds à la présentation du logement 
+//Corresponds à la présentation du logement
 .presentation {
-    &_location {
+  &_location {
     width: 75%;
 
     &_title {
       color: $primary-color;
       font-weight: 500;
       font-size: 36px;
-      @include mobile-breakpoint  {
+      @include mobile-breakpoint {
         font-size: 18px;
       }
     }
     &_adress {
       font-weight: 500;
       font-size: 18px;
-      @include mobile-breakpoint  {
+      @include mobile-breakpoint {
         font-size: 14px;
+        margin-top: 10px;
       }
     }
     &_tags {
@@ -32,7 +33,7 @@
       &--star {
         height: 24px;
         width: 24px;
-        @include mobile-breakpoint  {
+        @include mobile-breakpoint {
           height: 14px;
           width: 14px;
         }
@@ -43,11 +44,12 @@
 
 .tag {
   background-color: $primary-color;
- @include borderRadius10;
+  @include borderRadius10;
   font-size: 14px;
   font-weight: 700;
-  @include mobile-breakpoint  {
+  @include mobile-breakpoint {
     font-size: 10px;
+    border-radius: 5px;
   }
 }
 
@@ -56,16 +58,17 @@
     width: 70px;
     color: $primary-color;
     font-size: 18px;
-    @include mobile-breakpoint{
+    @include mobile-breakpoint {
       font-size: 12px;
       width: 60px;
+      font-weight: 500;
     }
   }
   &_picture {
     border-radius: 50%;
     height: 64px;
     width: 64px;
-    @include mobile-breakpoint  {
+    @include mobile-breakpoint {
       width: 32px;
       height: 32px;
     }

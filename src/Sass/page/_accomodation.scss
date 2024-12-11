@@ -16,6 +16,9 @@
       display: flex;
       flex-direction: row;
       margin-top: 20px;
+      @include mobile-breakpoint {
+        margin-top: 10px;
+      }
     }
     @include mobile-breakpoint {
       width: 85%;
@@ -27,6 +30,7 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: flex-end;
+      margin-top: 15px;
     }
     &_profil {
       display: flex;
@@ -41,6 +45,9 @@
       display: flex;
       gap: 10px;
       text-align: end;
+      @include mobile-breakpoint {
+        gap: 5px;
+      }
     }
   }
 }

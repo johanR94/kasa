@@ -15,7 +15,7 @@
     }
   }
   @include mobile-breakpoint {
-    width: 90%;
     text-transform: uppercase;
+    padding: 0 25px;
   }
 }
