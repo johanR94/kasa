@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importation des composants de routage
 import "./Sass/base/style.css"; // Importation des styles CSS
-import Home from "./Pages/Home/Home"; // Importation de la page d'accueil
-import About from "./Pages/About/About"; // Importation de la page "À propos"
-import ErrorPage from "./Pages/Error/Error"; // Importation de la page d'erreur
+import Home from "./Pages/Home"; // Importation de la page d'accueil
+import About from "./Pages/About"; // Importation de la page "À propos"
+import ErrorPage from "./Pages/Error"; // Importation de la page d'erreur
 import Footer from "./Components/Footer"; // Importation du composant Footer
 import Header from "./Components/Header"; // Importation du composant Header
-import Accomodation from "./Pages/Accomodation/Accomodation"; // Importation de la page de détails du logement
+import Accomodation from "./Pages/Accomodation"; // Importation de la page de détails du logement
 
 // Composant de mise en page pour envelopper le Header et le Footer autour des enfants
 // eslint-disable-next-line react/prop-types

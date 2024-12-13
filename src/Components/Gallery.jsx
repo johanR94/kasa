@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchLogementData } from "../Api/apiLogements";
-import ErrorPage from "../Pages/Error/Error";
+import ErrorPage from "../Pages/Error";
 import Card from "./Card";
 
 export default function Logement() {

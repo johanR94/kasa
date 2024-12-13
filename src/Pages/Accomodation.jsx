@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; // Importez useNavigate
-import { fetchLogementData } from "../../Api/apiLogements";
-import Carousel from "../../Components/Carousel";
-import Presentation from "../../Components/Presentation";
-import Collaps from "../../Components/Collaps";
-import Main from "../../Components/Main";
-import Profil from "../../Components/Profil";
+import { fetchLogementData } from "../Api/apiLogements";
+import Carousel from "../Components/Carousel";
+import Presentation from "../Components/Presentation";
+import Collaps from "../Components/Collapse";
+import Main from "../Components/Main";
+import Profil from "../Components/Profil";
 
 export default function Accomodation() {
   useEffect(() => {
