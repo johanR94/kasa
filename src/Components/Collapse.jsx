@@ -9,9 +9,7 @@ export default function Coollaps({ title, content }) {
   return (
     <>
       <div className="collaps">
-        {" "}
         <div className="collaps_item" onClick={() => setToggle(!toggle)}>
-          {" "}
           <h2 className="collaps_item_title">{title}</h2>
           <img
             className={`collaps_item_arrow ${!toggle ? "rotate" : ""}`} // Applique la classe "rotate" si toggle est faux

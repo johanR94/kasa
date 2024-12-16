@@ -11,17 +11,15 @@ export default function About() {
     document.title = "About - Kasa";
   }, []);
   return (
-    <>
-      <Main>
-        <Banner img={ImgBannerAbout} />
-        <section className="about">
-          <div className="about_content">
-            {aboutContent.map((item, index) => (
-              <Collaps key={index} title={item.title} content={item.content} />
-            ))}
-          </div>
-        </section>
-      </Main>
-    </>
+    <Main>
+      <Banner img={ImgBannerAbout} />
+      <section className="about">
+        <div className="about_content">
+          {aboutContent.map((item, index) => (
+            <Collaps key={index} title={item.title} content={item.content} />
+          ))}
+        </div>
+      </section>
+    </Main>
   );
 }
