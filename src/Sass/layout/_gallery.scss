@@ -4,19 +4,13 @@
   box-sizing: content-box;
   @include borderRadius25;
   background-color: $secondary-color;
-  height: 700px;
-  overflow-y: hidden;
-  overflow: scroll;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-  &:-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-  }
+
   @include mobile-breakpoint {
     background-color: unset;
     border-radius: unset;
   }
   @include desktopLarge-breakpoint {
-    height: 742px;
+    row-gap: 2%;
+    column-gap: 2%;
   }
 }

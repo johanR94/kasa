@@ -4,13 +4,15 @@
 .gallery {
   display: grid;
   justify-items: center;
+  justify-content: center;
   grid-template-columns: 33% 33% 33%;
-  row-gap: 7%;
-  padding: 4% 0 4% 0;
+  row-gap: 15px;
+  column-gap: 10px;
+  padding: 3% 2%;
   margin: 0 0 2% 0;
   @include mobile-breakpoint {
     grid-template-columns: 100%;
-    row-gap: 2%;
-    height: 630px;
+    height: unset;
+    row-gap: 15px;
   }
 }

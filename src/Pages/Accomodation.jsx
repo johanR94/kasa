@@ -46,7 +46,6 @@ export default function Accomodation() {
   if (!logement) {
     return <div>Chargement...</div>;
   }
-
   // Rendu du composant une fois que les données du logement sont disponibles
   return (
     <Main>
@@ -60,7 +59,7 @@ export default function Accomodation() {
         <Profil
           hostName={logement.host.name}
           hostPicture={logement.host.picture}
-          rating={logement.rating}
+          rating={parseInt(logement.rating)}
         />
       </section>
       <div className="deroulant">

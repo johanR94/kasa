@@ -32,5 +32,10 @@
   }
   @include desktopLarge-breakpoint {
     width: 100%;
+    height: 300px;
   }
+}
+
+.about-footer {
+  background-color: aqua;
 }
