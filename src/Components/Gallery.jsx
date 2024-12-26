@@ -23,6 +23,9 @@ export default function Logement() {
   if (error) {
     return <ErrorPage />;
   }
+  if (!data) {
+    <div>chargement...</div>;
+  }
 
   return (
     <section className="gallery">

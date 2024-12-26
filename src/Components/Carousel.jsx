@@ -3,7 +3,7 @@ import { useState } from "react";
 import arrowRight from "../assets/arrows/arrowRight.png";
 import arrowLeft from "../assets/arrows/arrowLeft.png";
 
-const Carousel = ({ images }) => {
+export default function Carousel({ images }) {
   // État pour l'index de l'image actuelle
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -62,6 +62,4 @@ const Carousel = ({ images }) => {
       </div>
     </section>
   );
-};
-
-export default Carousel;
+}

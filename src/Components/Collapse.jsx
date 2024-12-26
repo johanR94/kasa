@@ -19,7 +19,6 @@ export default function Coollaps({ title, content }) {
         </div>
         {Array.isArray(content) ? ( // Vérifie si le contenu est un tableau
           <ul className={toggle ? "collaps_rollup" : "collaps_unrolled"}>
-            {" "}
             {content.map((item) => (
               <li key={item}>{item}</li>
             ))}

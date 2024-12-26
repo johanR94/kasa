@@ -6,7 +6,6 @@ export default function Profil({ hostName, hostPicture, rating }) {
     <div className="presentation_host">
       <div className="presentation_host_profil profil">
         <p className="profil_name">{hostName}</p>
-
         <img
           className="profil_picture"
           src={hostPicture}
