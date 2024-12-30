@@ -26,11 +26,8 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-
             <Route path="/about" element={<About />} />
-
             <Route path="/accomodation/:id" element={<Accomodation />} />
-            {/* Route pour la page de détails du logement avec ID dynamique */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Layout>

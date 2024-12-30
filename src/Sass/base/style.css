@@ -146,6 +146,14 @@
   box-sizing: content-box;
   border-radius: 25px;
   background-color: #f6f6f6;
+  height: 700px;
+  overflow-y: hidden;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.gallery:-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 @media screen and (max-width: 768px) {
   .gallery {
@@ -157,6 +165,7 @@
   .gallery {
     row-gap: 2%;
     column-gap: 2%;
+    height: 742px;
   }
 }
 
