@@ -3,7 +3,7 @@ import { fetchLogementData } from "../Api/apiLogements";
 import ErrorPage from "../Pages/Error";
 import Card from "./Card";
 
-export default function Logement() {
+export default function Gallery() {
   const [data, setData] = useState([]); // État pour stocker les données de logement
   const [error, setError] = useState(null); // État pour gérer les erreurs
 
@@ -21,7 +21,7 @@ export default function Logement() {
   }, []);
 
   if (error) {
-    return <ErrorPage />;
+    return <Error />;
   }
   if (!data) {
     <div>chargement...</div>;

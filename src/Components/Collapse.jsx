@@ -2,7 +2,7 @@
 import { useState } from "react";
 import arrowUp from "../assets/arrowUp.svg";
 
-export default function Coollaps({ title, content }) {
+export default function Collaps({ title, content }) {
   // Définir l'état initial sur true pour que le contenu soit masqué par défaut
   const [toggle, setToggle] = useState(true);
 

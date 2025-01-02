@@ -2,22 +2,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Im
 import "./Sass/base/style.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import ErrorPage from "./Pages/Error";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Error from "./Pages/Error";
 import Accomodation from "./Pages/Accomodation";
+import Layout from "./Components/Layout";
 
 // Composant de mise en page pour envelopper le Header et le Footer autour des enfants
 // eslint-disable-next-line react/prop-types
-function Layout({ children }) {
-  return (
-    <>
-      <Header />
-      {children} {/* Affichage des enfants (les routes) */}
-      <Footer />
-    </>
-  );
-}
 
 function App() {
   return (
@@ -28,7 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/accomodation/:id" element={<Accomodation />} />
-            <Route path="*" element={<ErrorPage />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </Layout>
       </div>

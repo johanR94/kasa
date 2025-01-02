@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Rates from "../Components/Rates";
 import PropTypes from "prop-types";
 
@@ -16,9 +17,3 @@ export default function Profil({ hostName, hostPicture, rating }) {
     </div>
   );
 }
-
-Profil.propTypes = {
-  hostName: PropTypes.string.isRequired,
-  hostPicture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-};

@@ -20,7 +20,7 @@ export default function Carousel({ images }) {
   };
 
   // Fonction pour masquer le compteur si une seule image
-  const HideCarouselCounter = (images) => {
+  const hideCarouselCounter = (images) => {
     return images.length <= 1 ? "none" : "";
   };
 
@@ -38,7 +38,7 @@ export default function Carousel({ images }) {
       />
       <div
         className="carousel_arrows arrows"
-        style={{ display: HideCarouselCounter(images) }}
+        style={{ display: hideCarouselCounter(images) }}
       >
         <img
           src={arrowLeft}
@@ -56,7 +56,7 @@ export default function Carousel({ images }) {
       </div>
       <div
         className="carousel_counter"
-        style={{ display: HideCarouselCounter(images) }}
+        style={{ display: hideCarouselCounter(images) }}
       >
         {currentImageIndex + 1} / {images.length}{" "}
       </div>
