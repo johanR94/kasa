@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import orangeStars from "../assets/orangeStars.svg";
-import greyStars from "../assets/greyStars.svg";
+import orangeStars from "../Assets/orangeStars.svg";
+import greyStars from "../Assets/greyStars.svg";
 
 export default function Rates({ rating }) {
   return (

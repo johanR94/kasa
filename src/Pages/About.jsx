@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import aboutContent from "../Data/About.json";
 import Banner from "../Components/Banner";
-import ImgBannerAbout from "../assets/ImgBannerAbout.png";
+import ImgBannerAbout from "../Assets/ImgBannerAbout.png";
 import Main from "../Components/Main";
 import Collaps from "../Components/Collapse";
 

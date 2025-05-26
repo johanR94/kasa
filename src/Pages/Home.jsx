@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Banner from "../Components/Banner";
-import ImgBannerHome from "../assets/ImgBannerHome.png";
+import ImgBannerHome from "../Assets/ImgBannerHome.png";
 import Gallery from "../Components/Gallery";
 import Main from "../Components/Main";
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import arrowUp from "../assets/arrowUp.svg";
+import arrowUp from "../Assets/arrowUp.svg";
 
 export default function Collaps({ title, content }) {
   // Définir l'état initial sur true pour que le contenu soit masqué par défaut
