@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import arrowRight from "../assets/arrows/arrowRight.png";
-import arrowLeft from "../assets/arrows/arrowLeft.png";
+import arrowRight from "../Assets/arrows/arrowRight.png";
+import arrowLeft from "../Assets/arrows/arrowLeft.png";
 
 export default function Carousel({ images }) {
   // État pour l'index de l'image actuelle
